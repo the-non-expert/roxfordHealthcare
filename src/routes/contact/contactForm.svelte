@@ -1,7 +1,6 @@
 <script>
   //   import { myContactForm } from "../../Firebase.js";
   import { writable } from "svelte/store";
-  import { addDoc } from "firebase/firestore";
 
   const formData = writable({
     fullName: "",
