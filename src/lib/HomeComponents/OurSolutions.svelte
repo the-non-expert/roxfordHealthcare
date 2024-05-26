@@ -32,7 +32,7 @@
 
   <div class="w-full flex gap-2 px-5 solutionContainer">
     {#each solutions as solution}
-      <div class="bg-[#F0F4FF] w-1/3 rounded-xl">
+      <div class="bg-[#F0F4FF] w-1/3 rounded-xl individualSolution">
         <img src={solution.image} alt="solution" class="w-1/2 p-4" />
         <p class="font-[Montserrat] font-light text-4xl p-2">
           {solution.heading}
@@ -49,6 +49,9 @@
   @media only screen and (max-width: 999px) {
     .solutionContainer {
       flex-direction: column;
+    }
+    .individualSolution {
+      width: 100%;
     }
   }
 </style>
