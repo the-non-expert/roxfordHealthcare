@@ -8,7 +8,7 @@
     alt="Banner"
     class="absolute inset-0 w-full h-full object-cover object-botom"
   />
-  <div class="absolute inset-0 bg-black bg-opacity-50" />
+  <div class="absolute inset-0 bg-black bg-opacity-60" />
   <div
     class="relative flex flex-col items-center justify-center w-full h-full text-center p-10 text-white"
   >

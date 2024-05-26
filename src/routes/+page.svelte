@@ -3,6 +3,7 @@
   import medicineBanner from "../lib/images/medicineImage.jpeg";
   import trustBanner from "../lib/images/trustImage.jpeg";
   import innovationBanner from "../lib/images/innovationImage.jpeg";
+  import OurSolutions from "../lib/HomeComponents/OurSolutions.svelte";
 
   const data = [
     {
@@ -32,5 +33,8 @@
 <div>
   <div class="mb-10">
     <Carousel cards={data} />
+  </div>
+  <div>
+    <OurSolutions />
   </div>
 </div>

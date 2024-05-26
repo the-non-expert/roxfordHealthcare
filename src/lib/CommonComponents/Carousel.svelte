@@ -1,9 +1,11 @@
 <script>
+  import { onMount, onDestroy } from "svelte";
   import HeroComponent from "../HomeComponents/HeroComponent.svelte";
 
   export let cards;
-  console.log(cards);
+
   let currentCardIndex = 0;
+  let interval;
 
   function nextCard() {
     currentCardIndex = (currentCardIndex + 1) % cards.length;
@@ -15,6 +17,26 @@
 
   function goToCard(index) {
     currentCardIndex = index;
+    resetInterval();
+  }
+
+  onMount(() => {
+    cards.forEach((card) => {
+      const img = new Image();
+      img.src = card.image;
+    });
+    interval = setInterval(nextCard, 5000);
+
+    // Cleanup interval on component destroy
+    onDestroy(() => {
+      clearInterval(interval);
+    });
+  });
+
+  // Reset the interval whenever the user clicks on a dot
+  function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextCard, 5000);
   }
 </script>
 
