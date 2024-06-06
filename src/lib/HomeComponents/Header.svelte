@@ -1,5 +1,5 @@
 <script>
-  // import Logo from "../images/PrimeLogo.png";
+  import LogoMain from "../images/RoxfordLogo.jpg";
 
   let navOptions = [
     { id: 1, name: "Home", redirectUrl: "/" },
@@ -10,7 +10,9 @@
 </script>
 
 <div class="flex justify-around mt-10 mb-5 items-center headerContainer">
-  <img src="" alt="ROXFORD HEALTHCARE" class="" />
+  <div class="w-1/6 logoCont">
+    <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" />
+  </div>
 
   <header class="flex gap-12 justify-center headerOptions">
     {#each navOptions as item (item.id)}
@@ -27,6 +29,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
+    .logoCont {
+      width: 70%;
+      margin-bottom: 10px;
     }
 
     .headerOptions {

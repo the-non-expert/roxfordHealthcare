@@ -1,9 +1,7 @@
 <script>
-  // import icon from "$lib/images/addyFitnessIcon.png";
-  // import logo from "$lib/images/addyFitnessLogo.png";
-  // import caption from "$lib/images/addyFitnessCaption.png";
   import phone from "$lib/images/phoneIcon.svg";
   import email from "$lib/images/emailIcon.svg";
+  import LogoMain from "../images/roxfordLogo2.png";
 
   import instagramIcon from "$lib/images/instagramIcon.svg";
   import whatsappIcon from "$lib/images/whatsappIcon.svg";
@@ -41,8 +39,8 @@
 
 <div class="py-8 rounded-t-3xl bg-[#DCEBFE]">
   <div class="flex justify-evenly items-center footerContainer mb-12">
-    <div class="flex">
-      <img src="" alt="ROXFORD HEALTHCARE" class="flex" />
+    <div class="w-1/5 logoContainer">
+      <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" />
     </div>
 
     <div class="flex gap-10 footerOptions">
@@ -68,7 +66,7 @@
       <p class="font-semibold">Privacy</p>
     </div>
 
-    <div class="flex gap-2 text-black">
+    <div class="flex gap-2 text-black contactCont">
       <div class="flex items-center gap-1">
         <img src={phone} alt="phoneIcon" class="w-4" />
         <p class=" font-[lato]">(+91) 85580-00195</p>
@@ -92,6 +90,11 @@
       align-items: center;
     }
 
+    .logoContainer {
+      width: 70%;
+      margin-bottom: 15px;
+    }
+
     .footerOptions {
       width: 80%;
       display: flex;
@@ -101,6 +104,11 @@
       margin-bottom: 15px;
     }
 
+    .contactCont {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .copyrightContainer {
       flex-direction: column-reverse;
       margin-top: 50px;
