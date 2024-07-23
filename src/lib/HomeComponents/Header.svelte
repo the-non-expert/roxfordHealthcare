@@ -5,7 +5,8 @@
     { id: 1, name: "Home", redirectUrl: "/" },
     { id: 2, name: "About Us", redirectUrl: "/about" },
     { id: 3, name: "Products", redirectUrl: "/products" },
-    { id: 5, name: "Contact Us", redirectUrl: "/contact" },
+    { id: 4, name: "Contact Us", redirectUrl: "/contact" },
+    { id: 5, name: "Careers", redirectUrl: "/careers" },
   ];
 </script>
 

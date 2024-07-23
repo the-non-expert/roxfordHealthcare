@@ -32,7 +32,7 @@
 
 <div>
   <div class="mb-10">
-    <Carousel cards={data} />
+    <!-- <Carousel cards={data} /> -->
   </div>
   <div>
     <OurSolutions />
