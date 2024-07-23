@@ -31,8 +31,8 @@
 </script>
 
 <div>
-  <div class="mb-10">
-    <!-- <Carousel cards={data} /> -->
+  <div class="mb-9">
+    <Carousel cards={data} />
   </div>
   <div>
     <OurSolutions />
