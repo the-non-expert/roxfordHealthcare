@@ -2,7 +2,7 @@
   import aboutImage from "../../lib/images/aboutImg.svg";
 </script>
 
-<div class="text-center flex flex-col justify-center">
+<div class="text-center flex flex-col justify-center md:pt-20">
   <p class="font-semibold text-4xl p-2">
     ABOUT <span class="text-[#6F42C1]">ROXFORD</span> HEALTHCARE
   </p>

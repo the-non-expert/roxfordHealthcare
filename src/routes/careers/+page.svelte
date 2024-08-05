@@ -18,7 +18,7 @@
 </script>
 
 <div
-  class="flex flex-col md:flex-row items-center justify-between p-6 px-10 rounded-lg shadow-md gap-10"
+  class="flex flex-col md:flex-row items-center justify-between p-6 px-10 rounded-lg shadow-md gap-10 md:pt-28"
 >
   <!-- Careers Hero Image -->
   <div class="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">

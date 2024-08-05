@@ -7,7 +7,7 @@
   import Respiratory from "$lib/images/respiratory.jpeg";
 
   const categories = [
-    { id: 1, name: "Diacare", image: diacard, redirect: "/products/diacare" },
+    { id: 1, name: "Diacard", image: diacard, redirect: "/products/diacard" },
     {
       id: 2,
       name: "GyneCare",
@@ -41,19 +41,21 @@
   ];
 </script>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 md:pt-32">
   {#each categories as category}
     <div
       class="relative rounded-lg h-32 flex items-center justify-center overflow-hidden"
     >
-      <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('{category.image}');"
-      ></div>
-      <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="relative text-white z-10 text-5xl">
-        <a href={category.redirect}>{category.name}</a>
-      </div>
+      <a href={category.redirect}>
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="background-image: url('{category.image}');"
+        ></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative text-white z-10 text-5xl">
+          {category.name}
+        </div>
+      </a>
     </div>
   {/each}
 </div>
