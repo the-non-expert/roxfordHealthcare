@@ -47,8 +47,14 @@
   <div>
     <img src={addressIcon} alt="addressIcon" class="w-10" />
   </div>
-  <p>F-603, Rishi Apartments, Behind Golden Square Zirakpur-140603</p>
-  <p>MCB-Z3-02330, Sikanderpura, Railway Road, Bathinda-151001</p>
+  <div>
+    <p class="font-bold">Head Office:</p>
+    <p>MCB-Z3-02330, Sikanderpura, Railway Road, Bathinda-151001</p>
+  </div>
+  <div>
+    <p class="font-bold">Corporate Office:</p>
+    <p>F-603, Rishi Apartments, Behind Golden Square Zirakpur-140603</p>
+  </div>
 
   <div class="flex gap-2">
     <img src={emailIcon} alt="emailIcon" class="w-4" />
