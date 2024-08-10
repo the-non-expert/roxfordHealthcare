@@ -4,42 +4,77 @@ export const criticalcareMedicineDetails = [
     name: "APRICLAV 1.2GM INJ",
     composition: "Amoxycillin 1000 mg. + Potassium Clavulanate 200 mg.",
     imageUrl: "gs://roxford-healthcare.appspot.com/apriclav12.png",
+    status: "Prescription Only Drug",
+    formulation: "Injections",
+    dosage: "As prescribed by the physician",
+    description:
+      "Contains Amoxycillin, a Penicillin antibiotic with Clavulanic acid, a beta-lactam inhibitor. APRILAV 1.2gm Injection is a broad spectrum antibiotic having extensive usage, but used in cases of difficult infections of kids, adolescents & adults.",
   },
   {
     id: 2,
     name: "DIALCEF INJ",
     composition: "Cefoperazone 1000mg + Sulbactam 500 mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/dialcef.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Cefoperazone, a third generation cephalosporin with Sulbactam, a betalactamase inhibitor and together they act by inhibiting the growth of bacteria. It is prescribed for gynaecological infection, intra-abdominal infection, soft tissue infection, respiratory tract infection, blood infection & skin and soft tissue infections.",
   },
   {
     id: 3,
     name: "EMIROX INJ",
     composition: "Ondansetron 4 mg",
     imageUrl: "gs://roxford-healthcare.appspot.com/Emirox.png",
+    status: "Prescription Only Drug",
+    formulation: "Injections",
+    dosage: "As prescribed by the physician",
+    description:
+      "Contains Ondansetron which is used to prevent nausea and vomiting caused by cancer chemotherapy, radiation therapy, and surgery. It works by blocking the action of serotonin, a natural substance that may cause nausea and vomiting.",
   },
   {
     id: 4,
     name: "ESMOWELL-40 INJ",
     composition: "Esomeprazole 40mg",
     imageUrl: "gs://roxford-healthcare.appspot.com/Esmowell40.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    description:
+      "Contains Esomeprazole, a PPI that inhibits acid production in the stomach & is indicated in the treatment of gastroesophageal reflux disease (GERD), Zollinger-Ellison syndrome, gastric and duodenal ulcers.",
+    formulation: "Injections",
   },
   {
     id: 5,
     name: "FEFORD INJ",
     composition: "Iron Sucrose 5 ml.",
     imageUrl: "gs://roxford-healthcare.appspot.com/FefordInjection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Iron sucrose (form of Iron) indicated for treatment of iron deficiency anemia associated with chronic kidney disease.",
   },
   {
     id: 6,
     name: "FLIPNAC INJECTION",
     composition: "Acetylcysteine USP 200mg",
     imageUrl: "gs://roxford-healthcare.appspot.com/Flipnac-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Used in the treatment of Respiratory disease with excessive mucus, which helps in the loosening of mucus. It eases the symptoms like coughing, chest tightness, breathlessness, and, wheezing.",
   },
   {
     id: 7,
     name: "HEPTOWITT INJ",
     composition: "L-Ornithine-L-Aspartate 5 gm",
     imageUrl: "gs://roxford-healthcare.appspot.com/Heptowitt-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Used in the treatment of diseases associated with impaired hepatic function (e.g. cirrhosis of the liver), when there are symptoms and signs of minimal or overt hepatic encephalopathy especially for the treatment of incipient loss (Pre coma) or clouding of consciousness (coma).",
   },
   {
     id: 8,
@@ -47,65 +82,120 @@ export const criticalcareMedicineDetails = [
     composition:
       "Methylcobalamin 1500mcg + Nicotinamide 100mg + Pyridoxine HCI 100mg",
     imageUrl: "gs://roxford-healthcare.appspot.com/immuvent-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Methylcobalamin (bioactive form of Vitamin B12), Niacinamide (Vitamin B3) and Pyridoxine (Vitamin B6). This combination has synergestic effect on damaged nerves in diabetic neuropathy and peripheral neuropathy. It is indicated to reduce the risk of hyperhomocysteinemia and resulting risks of atherosclerosis, cardiovascular and diabetic disorders.",
   },
   {
     id: 9,
-    name: "IVPARA 1GM INFUSION",
+    name: "IVPARA 1GM INJECTION",
     composition: "Paracetamol 1000mg Infusion IP",
     imageUrl: "gs://roxford-healthcare.appspot.com/Ivpara1Gm.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Helps in relieving moderate pain and reducing fever. It effectively alleviates pain and reduces fever for the short-term in cases following surgery or in cases where oral administration is not possible.",
   },
   {
     id: 10,
     name: "MEROSWIFT 1GM INJ",
     composition: "Meropenam 1000mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/Meroscwift-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Meropenem, a penem group antibiotic that acts via inhibiting growth of disease causing germs. Being a broad spectrum antibiotic it is prescribed in cases of brain infections, skin structure infections, intra-abdominal infections, blood infections and post-surgical infections.",
   },
   {
     id: 11,
     name: "MEROSWIFT PLUS INJ",
     composition: "Meropenam 1000 mg + Sulbactam 500mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/MeroswiftPlus.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains a combination of Meropenem, a penem group antibiotic and Sulbactam, a betalactamases inhibitor that acts via stopping the growth of bacteria. A synergistic combination prescribed in cases of resistant brain infections, skin structure infections, intra-abdominal infections, blood infections and post-surgical infections.",
   },
   {
     id: 12,
     name: "NUZOLID IV",
     composition: "Linezolid 600mg / 300ml",
     imageUrl: "gs://roxford-healthcare.appspot.com/NuzolidIV.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Linezolid, a synthetic antibiotic of oxazolidinone class used for the treatment of infections caused by multi-resistant bacteria. It acts by inhibiting the growth of the bacteria and is prescribed in cases of respiratory infections, skin & soft tissue infections, diabetic foot infections, bone infections & other resistant infections.",
   },
   {
     id: 13,
     name: "PIPRASWIFT INJ",
     composition: "Piperacillin 4gm + Tazobactam 500mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/pipraswift-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Combination of Piperacillin, a Penicillin & Tazobactam, a beta-lactam inhibitor. Piperacillin kills bacteria by breaking their membranes and Tazobactam stops the enzymes that make bacteria resistant to the antibiotic, thus together they act synergistically. It is used in cases of serious infections of chest, urinary system & blood along with others.",
   },
   {
     id: 14,
     name: "REBIROX IV INJ",
     composition: "Rabeparazole 20mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/rebirox-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Rabeprazole a proton pump inhibitor that decreases the amount of acid produced in the stomach. REBIROX-IV Injection is used to treat gastroesophageal reflux disease (GERD) in adults and children who are at least 1 year old, Zollinger-Ellison syndrome, duodenal ulcer, Peptic ulcer and erosive esophagitis.",
   },
   {
     id: 15,
     name: "TAZOSWIFT INJ",
     composition: "Piperacillin 4gm + Tazobactam 500mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/Tazoswift-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Combination of Piperacillin, a Penicillin & Tazobactam, a beta-lactam inhibitor. Piperacillin kills bacteria by breaking their membranes and Tazobactam stops the enzymes that make bacteria resistant to the antibiotic, thus together they act synergistically. It is used in cases of serious infections of chest, urinary system & blood along with others.",
   },
   {
     id: 16,
     name: "TECNOCEF INJ",
     composition: "Ceftriaxone 1000mg + Tazobactam 125mg IV/IM",
     imageUrl: "gs://roxford-healthcare.appspot.com/Technocef-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contains Tazobactam, a beta lactamases inhibitor & Ceftriaxone, a cephalosporin which acts synergistically to provide better results in resistant infections. It is prescribed for respiratory tract infections, urinary tract infections, gynecological infections, intra-abdominal infections, for surgical prophylaxis, infections in blood as well bone and joint infections apart from others.",
   },
   {
     id: 17,
     name: "UZIDAC A INJ",
     composition: "Methylprednisolone 40 mg",
     imageUrl: "gs://roxford-healthcare.appspot.com/UzidacA-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Combination medicine which used in men to treat the symptoms of an enlarged prostate (benign prostatic hyperplasia or BPH) which include difficulty urinating (hesitation, dribbling, weak stream, and incomplete bladder emptying), painful urination, and urinary frequency and urgency. Tamsulosin relaxes the muscles in the prostate and bladder neck, making it easier to urinate and Dutasteride prevents testosterone from converting to dihydrotestosterone (DHT) in the body. DHT is involved in the development of benign prostatic hyperplasia (BPH).",
   },
   {
     id: 18,
     name: "WISOPRIDE INJ",
     composition: "Levosulpiride 25 mg",
-    imageUrl: "gs://roxford-healthcare.appspot.com/Wisopride-injection.png", // Replace with actual URL
+    imageUrl: "gs://roxford-healthcare.appspot.com/Wisopride-injection.png",
+    status: "Prescription Only Drug",
+    dosage: "As prescribed by the physician",
+    formulation: "Injections",
+    description:
+      "Contain Levosulpiride, an antipsychotic drug which acts by altering brain chemicals. It is prescribed in case of Schizophrenia (psychiatric disorder), to increase intestinal motility in diabetic patients and for premature ejaculation.",
   },
 ];
