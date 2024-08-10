@@ -1,6 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import { orthocareMedicineDetails } from "../../../lib/OrthocareMedicineList.js";
+  import { gsToHttp } from "$lib/CommonComponents/utils.js";
+  import { showPopup, selectedMedicine } from "$lib/stores.js";
+  import IndividualProductPopup from "../individualProductPopup.svelte";
 
   let selectedLetter = "";
   let filteredMedicines = [];
@@ -26,17 +29,17 @@
     filterMedicines();
   });
 
-  function gsToHttp(gsUrl) {
-    const baseUrl =
-      "https://firebasestorage.googleapis.com/v0/b/roxford-healthcare.appspot.com/o/";
-    const filePath = gsUrl.replace("gs://roxford-healthcare.appspot.com/", "");
-    const encodedFilePath = encodeURIComponent(filePath);
-    return `${baseUrl}${encodedFilePath}?alt=media`;
-  }
-
   // Reactive statement to watch selectedLetter and filter medicines accordingly
   $: selectedLetter, filterMedicines();
+
+  // Function to handle opening the popup with a new medicine
+  function openPopup(medicine) {
+    selectedMedicine.set(medicine);
+    showPopup.set(true);
+  }
 </script>
+
+<IndividualProductPopup />
 
 <div class="p-4">
   <p class="font-bold text-center text-5xl mb-8">Orthocare</p>
@@ -67,7 +70,12 @@
       </div>
     {:else}
       {#each filteredMedicines as medicine}
-        <div class="border p-3 rounded flex flex-col items-center">
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <div
+          class="border p-3 rounded flex flex-col items-center"
+          on:click={() => openPopup(medicine)}
+        >
           <img
             src={gsToHttp(medicine.imageUrl)}
             alt={medicine.name}
