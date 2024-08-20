@@ -41,6 +41,14 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Products: Roxford Healthcare</title>
+  <meta
+    name="description"
+    content="Check out our pharmaceutical collection of medicines. Please contact us for any queries."
+  />
+</svelte:head>
+
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 md:pt-32">
   {#each categories as category}
     <div

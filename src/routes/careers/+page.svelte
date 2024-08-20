@@ -17,6 +17,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Careers: Roxford Healthcare</title>
+  <meta name="description" content="Apply to Roxford Healthcare Pvt Ltd." />
+</svelte:head>
+
 <div
   class="flex flex-col md:flex-row items-center justify-between p-6 px-10 rounded-lg shadow-md gap-10 md:pt-28"
 >
@@ -25,6 +30,7 @@
     <img
       src={careerHero}
       alt="Careers"
+      loading="lazy"
       class="w-full h-auto rounded-lg shadow-md"
     />
   </div>

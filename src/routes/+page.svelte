@@ -30,6 +30,14 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Home: Roxford Healthcare</title>
+  <meta
+    name="description"
+    content="Roxford Healthcare is a global pharmaceutical company that is committed to improving the health and well-being of people around the world. We specialize in the development, manufacturing, and distribution of innovative and effective pharmaceutical solutions that address some of the most pressing health challenges of our time."
+  />
+</svelte:head>
+
 <div>
   <div class="mb-9">
     <Carousel cards={data} />
