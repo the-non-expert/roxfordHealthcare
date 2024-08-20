@@ -3,19 +3,18 @@
   import email from "$lib/images/emailIcon.svg";
   import LogoMain from "../images/roxfordLogo2.png";
 
-  import instagramIcon from "$lib/images/instagramIcon.svg";
   import whatsappIcon from "$lib/images/whatsappIcon.svg";
-  import linkedInIcon from "$lib/images/linkedinIcon.svg";
+  import facebookIcon from "$lib/images/facebookIcon.svg";
 
   //   import Logo from "../images/PrimeLogo.png";
 
   let socialMediaDetails = [
-    {
-      id: 1,
-      name: "Instagram",
-      iconUrl: instagramIcon,
-      redirectLink: "",
-    },
+    // {
+    //   id: 1,
+    //   name: "Instagram",
+    //   iconUrl: instagramIcon,
+    //   redirectLink: "",
+    // },
     {
       id: 2,
       name: "Whatsapp",
@@ -24,8 +23,8 @@
     },
     {
       id: 3,
-      name: "LinkedIn",
-      iconUrl: linkedInIcon,
+      name: "Facebook",
+      iconUrl: facebookIcon,
       redirectLink: "",
     },
     // {
@@ -40,15 +39,15 @@
 <div class="py-8 rounded-t-3xl bg-[#DCEBFE]">
   <div class="flex justify-evenly items-center footerContainer mb-12">
     <div class="w-1/5 logoContainer">
-      <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" />
+      <a href="/"> <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" /></a>
     </div>
 
     <div class="flex gap-10 footerOptions">
-      <p class="font-semibold">About</p>
-      <p class="font-semibold">Services</p>
-      <p class="font-semibold">Contact Us</p>
-      <p class="font-semibold">Feedback</p>
-      <p class="font-semibold">Management</p>
+      <a href="/"><p class="font-semibold">Home</p></a>
+      <a href="/about"><p class="font-semibold">About Us</p></a>
+      <a href="/products"><p class="font-semibold">Our Products</p></a>
+      <a href="/contact"><p class="font-semibold">Contact Us</p></a>
+      <a href="/careers"><p class="font-semibold">Careers</p></a>
     </div>
 
     <div class="flex gap-4">
