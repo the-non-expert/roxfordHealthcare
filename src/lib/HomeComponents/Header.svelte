@@ -15,7 +15,7 @@
   mx-auto rounded-xl p-2"
 >
   <div class="w-1/6 logoCont">
-    <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" />
+    <a href="/"> <img src={LogoMain} alt="ROXFORD HEALTHCARE" class="" /></a>
   </div>
 
   <header class="flex gap-12 justify-center headerOptions">
