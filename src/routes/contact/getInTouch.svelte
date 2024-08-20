@@ -6,12 +6,13 @@
   import linkedInIcon from "$lib/images/linkedinIcon.svg";
   import youtubeIcon from "$lib/images/youtubeIcon.svg";
   import addressIcon from "$lib/images/addressIcon.svg";
+  import facebookIcon from "$lib/images/facebookIcon.svg";
 
   let socialMediaDetails = [
     {
       id: 1,
-      name: "Instagram",
-      iconUrl: instagramIcon,
+      name: "Facebook",
+      iconUrl: facebookIcon,
       redirectLink: "",
     },
     {
@@ -20,18 +21,18 @@
       iconUrl: whatsappIcon,
       redirectLink: "",
     },
-    {
-      id: 3,
-      name: "LinkedIn",
-      iconUrl: linkedInIcon,
-      redirectLink: "",
-    },
-    {
-      id: 4,
-      name: "Youtube",
-      iconUrl: youtubeIcon,
-      redirectLink: "",
-    },
+    // {
+    //   id: 3,
+    //   name: "LinkedIn",
+    //   iconUrl: linkedInIcon,
+    //   redirectLink: "",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Youtube",
+    //   iconUrl: youtubeIcon,
+    //   redirectLink: "",
+    // },
   ];
 </script>
 
@@ -60,7 +61,7 @@
     <img src={emailIcon} alt="emailIcon" class="w-4" />
     <p class="font-semibold text-[#5374B8]">Chat with Us!</p>
   </div>
-  <p>roxfordhealthcare@gmail.com</p>
+  <p>itsroxford@gmail.com</p>
 
   <div class="flex gap-2">
     <img src={phoneIcon} alt="phoneIcon" class="w-4" />
