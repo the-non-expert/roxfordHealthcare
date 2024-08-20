@@ -6,6 +6,7 @@
   <img
     src={data.image}
     alt="Banner"
+    loading="lazy"
     class="absolute inset-0 w-full h-full object-cover object-center"
   />
   <div class="absolute inset-0 bg-black bg-opacity-60"></div>
