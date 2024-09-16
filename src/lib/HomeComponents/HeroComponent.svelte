@@ -1,12 +1,13 @@
 <script>
+  import { gsToHttp } from "$lib/CommonComponents/utils.js";
+
   export let data;
 </script>
 
 <div class="hero relative w-screen h-[90vh]">
   <img
-    src={data.image}
+    src={gsToHttp(data.image)}
     alt="Banner"
-    loading="lazy"
     class="absolute inset-0 w-full h-full object-cover object-center"
   />
   <div class="absolute inset-0 bg-black bg-opacity-60"></div>

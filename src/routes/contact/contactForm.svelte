@@ -1,5 +1,7 @@
 <script>
   //   import { myContactForm } from "../../Firebase.js";
+  import { db } from "../../firebase";
+  import { collection, addDoc, getDocs } from "firebase/firestore";
   import { writable } from "svelte/store";
 
   const formData = writable({
@@ -9,29 +11,37 @@
     message: "",
   });
 
-  //   const handleSubmit = async () => {
-  //     console.log("Submit button is getting clicked");
+  const myContactForm = collection(db, "contacts");
 
-  //     const data = $formData; // Get the current value of the form data store
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
 
-  //     console.log(data);
+    const data = $formData; // Get the current value of the form data store
 
-  //     try {
-  //       // Add the form data to Firestore collection
-  //       const docRef = await addDoc(myContactForm, { data });
-  //       console.log("Document written with ID: ", docRef.id);
+    console.log("Form data:", data);
 
-  //       // Optionally, reset the form after successful submission
-  //       formData.set({
-  //         fullName: "",
-  //         email: "",
-  //         phone: "",
-  //         message: "",
-  //       });
-  //     } catch (error) {
-  //       console.error("Error adding form data to Firestore:", error);
-  //     }
-  //   };
+    try {
+      // Add the form data to Firestore collection
+      const docRef = await addDoc(myContactForm, data);
+      console.log("Document written with ID: ", docRef.id);
+
+      // Optionally, reset the form after successful submission
+      formData.set({
+        fullName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      // Provide feedback to the user (e.g., success message)
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.error("Error adding form data to Firestore:", error);
+
+      // Provide feedback to the user (e.g., error message)
+      alert("Error sending message. Please try again.");
+    }
+  };
 </script>
 
 <div
@@ -46,7 +56,10 @@
     HealthCare
   </blockquote>
 
-  <form class="flex flex-col gap-4 text-black font-semibold">
+  <form
+    on:submit|preventDefault={handleSubmit}
+    class="flex flex-col gap-4 text-black font-semibold"
+  >
     <div class="flex flex-col gap-1">
       <p>Full Name</p>
       <input

@@ -1,41 +1,48 @@
 <script>
-  import diacard from "$lib/images/diacard.jpeg";
-  import gynecareImg from "$lib/images/gynecare.jpeg";
-  import orthoCare from "$lib/images/orthoCare.jpeg";
-  import childCare from "$lib/images/childcare.jpeg";
-  import criticalCare from "$lib/images/criticalcare.jpeg";
-  import Respiratory from "$lib/images/respiratory.jpeg";
+  // import diacard from "$lib/images/diacard.jpeg";
+  // import gynecareImg from "$lib/images/gynecare.jpeg";
+  // import orthoCare from "$lib/images/orthoCare.jpeg";
+  // import childCare from "$lib/images/childcare.jpeg";
+  // import criticalCare from "$lib/images/criticalcare.jpeg";
+  // import Respiratory from "$lib/images/respiratory.jpeg";
+
+  import { gsToHttp } from "$lib/CommonComponents/utils.js";
 
   const categories = [
-    { id: 1, name: "Diacard", image: diacard, redirect: "/products/diacard" },
+    {
+      id: 1,
+      name: "Diacard",
+      image: "gs://roxford-healthcare.appspot.com/diacard.jpeg",
+      redirect: "/products/diacard",
+    },
     {
       id: 2,
       name: "GyneCare",
-      image: gynecareImg,
+      image: "gs://roxford-healthcare.appspot.com/gynecare.jpeg",
       redirect: "/products/gynecare",
     },
     {
       id: 3,
       name: "OrthoCare",
-      image: orthoCare,
+      image: "gs://roxford-healthcare.appspot.com/orthoCare.jpeg",
       redirect: "/products/orthocare",
     },
     {
       id: 4,
       name: "Child Care",
-      image: childCare,
+      image: "gs://roxford-healthcare.appspot.com/childcare.jpeg",
       redirect: "/products/childcare",
     },
     {
       id: 5,
       name: "Respiratory",
-      image: Respiratory,
+      image: "gs://roxford-healthcare.appspot.com/respiratory.jpeg",
       redirect: "/products/respiratory",
     },
     {
       id: 6,
       name: "Critical Care",
-      image: criticalCare,
+      image: "gs://roxford-healthcare.appspot.com/criticalcare.jpeg",
       redirect: "/products/criticalcare",
     },
   ];
@@ -57,7 +64,7 @@
       <a href={category.redirect}>
         <div
           class="absolute inset-0 bg-cover bg-center"
-          style="background-image: url('{category.image}');"
+          style="background-image: url('{gsToHttp(category.image)}');"
         ></div>
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative text-white z-10 text-5xl">
